@@ -5,14 +5,15 @@ import tsConfigPaths from 'vite-tsconfig-paths'
 
 const manifest = defineManifest({
   manifest_version: 3,
-  name: 'Mochi',
+  name: 'Motch',
   version: process.env.npm_package_version,
   description: 'Useful toolkit for academic survey as browser extension',
-  homepage_url: 'https://github.com/nandenjin/mochi',
+  homepage_url: 'https://github.com/nandenjin/motch',
   minimum_chrome_version: '89',
   icons: {
     128: 'src/assets/icons/icon_128.png',
   },
+  permissions: ['activeTab'],
 })
 
 // https://vitejs.dev/config/
